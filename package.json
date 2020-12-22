@@ -1,0 +1,40 @@
+{
+	"name": "grepupload",
+	"version": "1.1.1",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"test": "mocha"
+	},
+	"mocha": {
+		"require": "ts-node/register",
+		"spec": "src/*.test.ts"
+	},
+	"bin": {
+		"az": "./dist/index.js",
+		"pageup": "./dist/page-blobs.js"
+	},
+	"dependencies": {
+		"@azure/identity": "^1.2.0",
+		"@azure/storage-blob": "^12.3.0",
+		"mime-type": "^4.0.0"
+	},
+	"keywords": [],
+	"author": "Yisheng Jiang",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/chai": "^4.2.14",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.13.35",
+		"chai": "^4.2.0",
+		"source-map-support": "^0.5.16",
+		"ts-node": "^8.6.2",
+		"typedoc": "^0.17.4",
+		"typescript": "^3.8.3",
+		"webpack-cli": "^4.2.0"
+	},
+	"files": [
+		"dist"
+	]
+}
