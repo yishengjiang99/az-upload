@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - v14
+notifications:
+  email:
+    - yisheng.jiang@gmail.com
+script: npm test
