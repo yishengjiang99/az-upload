@@ -1,19 +1,18 @@
 {
   "name": "grepupload",
-  "version": "1.1.6",
-  "description": "now with grep-wss support ",
+  "version": "1.1.8",
+  "description": "now with files in dist/ folder",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "mocha",
-    "postinstall": "tsc"
+    "test": "node dist/index.test.js"
+  },
+  "bin": {
+    "upload": "bim/upload"
   },
   "mocha": {
     "require": "ts-node/register",
     "spec": "src/*.test.ts"
-  },
-  "bin": {
-    "upload": "dist/index.js"
   },
   "dependencies": {
     "@azure/storage-blob": "^12.3.0",
@@ -29,7 +28,8 @@
   "author": "Yisheng Jiang",
   "license": "ISC",
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "repository": {
     "type": "git",
@@ -38,9 +38,5 @@
   "bugs": {
     "url": "https://github.com/yishengjiang99/az-upload/issues"
   },
-  "homepage": "https://github.com/yishengjiang99/az-upload#readme",
-  "devDependencies": {
-    "@types/chai": "^4.2.14",
-    "chai": "^4.2.0"
-  }
+  "homepage": "https://github.com/yishengjiang99/az-upload#readme"
 }
