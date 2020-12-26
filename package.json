@@ -1,40 +1,46 @@
 {
-	"name": "grepupload",
-	"version": "1.1.1",
-	"description": "",
-	"main": "dist/index.js",
-	"scripts": {
-		"build": "tsc",
-		"test": "mocha"
-	},
-	"mocha": {
-		"require": "ts-node/register",
-		"spec": "src/*.test.ts"
-	},
-	"bin": {
-		"az": "./dist/index.js",
-		"pageup": "./dist/page-blobs.js"
-	},
-	"dependencies": {
-		"@azure/identity": "^1.2.0",
-		"@azure/storage-blob": "^12.3.0",
-		"mime-type": "^4.0.0"
-	},
-	"keywords": [],
-	"author": "Yisheng Jiang",
-	"license": "ISC",
-	"devDependencies": {
-		"@types/chai": "^4.2.14",
-		"@types/mocha": "^7.0.2",
-		"@types/node": "^13.13.35",
-		"chai": "^4.2.0",
-		"source-map-support": "^0.5.16",
-		"ts-node": "^8.6.2",
-		"typedoc": "^0.17.4",
-		"typescript": "^3.8.3",
-		"webpack-cli": "^4.2.0"
-	},
-	"files": [
-		"dist"
-	]
+  "name": "grepupload",
+  "version": "1.1.6",
+  "description": "now with grep-wss support ",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha",
+    "postinstall": "tsc"
+  },
+  "mocha": {
+    "require": "ts-node/register",
+    "spec": "src/*.test.ts"
+  },
+  "bin": {
+    "upload": "dist/index.js"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.3.0",
+    "grep-wss": "^1.1.2",
+    "lighter-mime": "^1.0.0"
+  },
+  "keywords": [
+    "Azure Blob Service",
+    "Upload files",
+    "stream upload",
+    "page blobs"
+  ],
+  "author": "Yisheng Jiang",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yishengjiang99/az-upload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yishengjiang99/az-upload/issues"
+  },
+  "homepage": "https://github.com/yishengjiang99/az-upload#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "chai": "^4.2.0"
+  }
 }

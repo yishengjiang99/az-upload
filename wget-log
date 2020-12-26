@@ -1,11 +1,0 @@
---2020-12-15 08:50:37--  https://www.youtube.com/results?search_query=treanding+page
-Resolving www.youtube.com (www.youtube.com)... 2607:f8b0:4005:80b::200e, 2607:f8b0:4005:801::200e, 2607:f8b0:4005:804::200e, ...
-Connecting to www.youtube.com (www.youtube.com)|2607:f8b0:4005:80b::200e|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/html]
-Saving to: ‘results?search_query=treanding+page’
-
-results?search_query=treanding+page                             [<=>                                                                                                                                      ]       0  --.-KB/s               results?search_query=treanding+page                             [ <=>                                                                                                                                     ] 219.19K   684KB/s               results?search_query=treanding+page                             [  <=>                                                                                                                                    ] 494.73K  1.25MB/s    in 0.4s    
-
-2020-12-15 08:50:37 (1.25 MB/s) - ‘results?search_query=treanding+page’ saved [506607]
-
